@@ -1,5 +1,6 @@
 package com.example.android.userprofile;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -17,11 +18,17 @@ public class MainActivity extends AppCompatActivity {
 
         TextView name = (TextView) findViewById(R.id.name);
         name.setText("Elisa Simone");
+        name.setTextSize(50);
+        name.setTextColor(Color.BLUE);
 
         TextView birthday = (TextView) findViewById(R.id.birthday);
         birthday.setText("11 March");
+        birthday.setTextSize(30);
+        birthday.setTextColor(Color.RED);
 
         TextView country = (TextView) findViewById(R.id.country);
         country.setText("Italy");
+        country.setTextSize(30);
+        country.setTextColor(Color.GREEN);
     }
 }
